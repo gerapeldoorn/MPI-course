@@ -24,5 +24,10 @@ CentOS 7 image download: https://s3-eu-west-1.amazonaws.com/virtualboxes.org/Cen
 # Installing Lean and Mean
 * [Puppet yum repositories](https://docs.puppet.com/guides/puppetlabs_package_repositories.html#yum-based-systems)
 
+# Initial modules
+* https://forge.puppet.com/camptocamp/puppetserver
+* https://forge.puppet.com/puppetlabs/puppetdb
+
+
 ## Install GitLab
 https://about.gitlab.com/downloads/#centos7
