@@ -1,6 +1,11 @@
-# Why do we need code-review?
+# Why Version Control
+* Manageable Changesets
+* Complete history of your code-changes
+* Easier Collaboration
+* Easier deployment
+* Rollback your code if needed
 
-* To keep our production assets safe?
+# Why code-review?
 * As a learning tool
 
 # Options
