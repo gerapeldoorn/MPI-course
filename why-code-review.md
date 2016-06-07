@@ -9,6 +9,11 @@
 * As a learning tool
 
 # Options
+## hosted
+* https://github.com
+* https://www.atlassian.com/software/bitbucket
+* https://about.gitlab.com
+## on-premise
 * https://github.com
 * https://enterprise.github.com/features
 * https://www.atlassian.com/software/bitbucket
