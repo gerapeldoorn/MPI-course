@@ -30,9 +30,9 @@ for i in role profile
 do
         cd "$BASE/dev_${USER}/modules/$i"
 	git branch master
-	git branch devel
-	git checkout devel
-	git pull origin devel
+	git branch develop
+	git checkout develop
+	git pull origin develop
         git flow init -fd
         cd -
 done
