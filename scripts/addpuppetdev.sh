@@ -1,8 +1,6 @@
 BASE=/home/${USER}
 
-GITSERVER=codereview.example.com
-PORT=22
-REPO=ssh://$GITSERVER:$PORT/Puppet-Control
+REPO=git@gitlab.puppetspecialist.nl:puppet/control.git
 
 if [ "$USER" = 'root' ]
 then
@@ -16,30 +14,28 @@ then
         exit 1
 fi
 
-ssh -p $PORT $GITSERVER
-if [ $? -ne 127 ]
+git clone --branch integration "$REPO" "$BASE/dev_${USER}"
+if [ $? -ne 0 ]
 then
         echo ======================================
         echo  You need to do the following BEFORE running this script:
-        echo    - setup ssh pubkey in gerrit
+        echo    - setup ssh pubkey in gitlab
         echo ======================================
         exit 1
 fi
-
-mkdir -p "$BASE/dev_${USER}"
-git clone --branch integration "$REPO" "$BASE/dev_${USER}"
 cd "$BASE/dev_${USER}"
 r10k puppetfile install
 
-for i in role profile company
+for i in role profile
 do
         cd "$BASE/dev_${USER}/modules/$i"
-        scp -p -P $PORT $GITSERVER:hooks/commit-msg .git/hooks/
+	git branch master
+	git branch devel
+	git checkout devel
+	git pull origin devel
         git flow init -fd
         cd -
 done
-
-scp -p -P 29418 $GITSERVER:hooks/commit-msg "$BASE/dev_${USER}/.git/hooks/"
 
 echo ======================================
 echo    All done, enjoy!
