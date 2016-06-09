@@ -1,6 +1,6 @@
 # Git flow
 
-![git-flow docs](http://nvie.com/posts/a-successful-git-branching-model/)
+[git-flow docs](http://nvie.com/posts/a-successful-git-branching-model/)
 
 ## Branches used for modules
 * development => develop
