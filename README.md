@@ -7,7 +7,9 @@ Presentation intro: https://my.visme.co/projects/dmv33067-puppet-mpi-course
 ## Prerequisites
 * Intermediate Puppet knowledge
 * 2 VMs with internet connection
-  * Puppet Master (4G, 8G if Puppet Enterprise)
+  * Puppet Master
+    * 4G memory, 8G if Puppet Enterprise
+    * at least 2 cores, preferably 4.
   * Git server
 
 # Links
