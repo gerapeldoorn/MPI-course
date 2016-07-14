@@ -3,7 +3,7 @@
 mydomain="puppetspecialist.nl"
 
 Vagrant.configure(2) do |config|
-  config.vm.box = "base"
+  config.vm.box = "bento/centos-6.7"
   config.vm.hostname = "rh6.#{mydomain}"
 
   config.vm.provision "shell", inline: <<-SHELL
