@@ -36,6 +36,18 @@ do
         cd -
 done
 
+git flow init -f << EOF
+testing
+integration
+
+
+
+
+
+
+
+EOF
+
 echo ======================================
 echo    All done, enjoy!
 echo ======================================
