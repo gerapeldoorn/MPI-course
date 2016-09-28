@@ -3,7 +3,7 @@
 # Intro
 Presentation intro: https://my.visme.co/projects/dmv33067-puppet-mpi-course
 
-Sign up through this link for a 20% discount on the course: https://www.udemy.com/manageable-puppet-infrastructure/?couponCode=GITHUB20
+Sign up through this link for a 35% discount on the course: https://www.udemy.com/manageable-puppet-infrastructure/?couponCode=GITHUB60
 
 ## Prerequisites
 * Intermediate Puppet knowledge
