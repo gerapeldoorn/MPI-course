@@ -16,7 +16,7 @@ Sign up through this link for a discount on the course: https://www.udemy.com/ma
 # Links
 ## Getting started
 CentOS 7 image download: https://s3-eu-west-1.amazonaws.com/virtualboxes.org/CentOS7-base.ova.torrent (root/reverse)
-Alternative: http://www.osboxes.org/centos
+Alternative: https://sourceforge.net/projects/virtualappliances/files/Linux/CentOS/CentOS-7.0-amd64-minimal.ova/download
 
 # Choices
 * [Puppet Enterprise](https://puppet.com)
